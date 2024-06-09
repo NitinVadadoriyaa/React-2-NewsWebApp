@@ -15,7 +15,7 @@ const News = (props) => {
 
 const update = async()=>{
   props.setProgress(10);
-    let url = `https://inshorts.deta.dev/news?category=${props.category}`;
+    let url = `https://inshorts.deta.dev/news?category=${props.category}`; // THIS API IS NOW EXPIER , YOU HAVE TO UPDATE IT & KEEP IT IN .env FILE.
     let data = await fetch(url);
     props.setProgress(70);
 
